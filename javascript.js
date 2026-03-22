@@ -10,3 +10,9 @@ function gridCreate() {
 }
 gridCreate();
 
+const drawFunction = document.querySelectorAll(".grid-square")
+for (let div of drawFunction) {
+    div.addEventListener("mouseenter", () => {
+        div.style.backgroundColor = 'royalblue'
+    })
+}
