@@ -6,7 +6,6 @@
 }
 
 .grid-square {
-    width: 6.25%;
     aspect-ratio: 1/1;
     box-sizing: border-box;
     border: 2px solid honeydew;
