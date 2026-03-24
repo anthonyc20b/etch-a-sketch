@@ -14,7 +14,14 @@ gridCreate();
 const drawFunction = document.querySelectorAll(".grid-square");
 for (let div of drawFunction) {
     div.addEventListener("mouseenter", () => {
-        div.style.backgroundColor = 'royalblue'
+        function randomColor () {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        const rgbColor = `rgb(${r}, ${g}, ${b})`;
+        div.style.backgroundColor = rgbColor;
+        }
+        randomColor();
     })
 }
 
@@ -40,7 +47,14 @@ newGridButton.addEventListener("click", () => {
     const drawFunction = document.querySelectorAll(".grid-square");
 for (let div of drawFunction) {
     div.addEventListener("mouseenter", () => {
-        div.style.backgroundColor = 'royalblue'
+        function randomColor () {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        const rgbColor = `rgb(${r}, ${g}, ${b})`;
+        div.style.backgroundColor = rgbColor;
+        }
+        randomColor();
     })
 }
 }
